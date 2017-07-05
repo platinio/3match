@@ -18,5 +18,10 @@ public class UIManager : MonoBehaviour
 
     public Text scoreText;
 
+    public void Start()
+    {
+        score = 0;
+    }
+
 
 }

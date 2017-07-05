@@ -144,12 +144,9 @@ public class InputController : MonoBehaviour
         else
         {
             StartCoroutine(_gridManager.CO_CallColapse(verticalExplosion));
+            
         }
     }
 
-    IEnumerator CO_CallColapse(bool verticalExplosion)
-    {
-        yield return new WaitForSeconds(0.2f);
-        _gridManager.Collapse(verticalExplosion);
-    }
+    
 }
